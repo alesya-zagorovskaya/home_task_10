@@ -1,0 +1,32 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: lightgrey;
+}
+.form {
+    border: 1px solid grey;
+    width: 600px;
+    margin: 150px auto;
+    padding: 30px 20px;
+}
+.round-border {
+    border-radius: 10px;
+}
+.description {
+    display: flex;
+    align-items: flex-end;
+}
+img {
+    margin-right: 5px;
+}
+.instruction {
+    border: 1px solid grey;
+    height: 100px;
+    background-color: white;
+}
+
