@@ -5,28 +5,71 @@
     padding: 0;
     margin: 0;
 }
-body {
-    background-color: lightgrey;
-}
-.form {
+form {
     border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #e9e9e9;
     width: 600px;
     margin: 150px auto;
     padding: 30px 20px;
 }
-.round-border {
-    border-radius: 10px;
+.description, .block {
+    display: flex;
 }
 .description {
-    display: flex;
     align-items: flex-end;
+    margin-bottom: 7px;
 }
-img {
-    margin-right: 5px;
+p {
+    color: #515151;
 }
-.instruction {
+.image {
+    width: 100px;
+    margin-right: 10px;
+}
+img.photo {
     border: 1px solid grey;
-    height: 100px;
+    padding: 5px;
+    border-radius: 6px;
     background-color: white;
+}
+label.upload-text input[type="file"] {
+    position:absolute;
+    opacity: 0;
+    z-index: -1000;
+}
+.upload-text {
+    display: block;
+    text-align: center;
+}
+span {
+    background-color: #44a4df;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border: 1px solid grey;
+}
+span:hover {
+    background-color: #70b9e6;
+    cursor: pointer;
+}
+input, textarea {
+    padding: 7px;
+    font-family: Arial, sans-serif;
+}
+input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid #a5a5a5;
+    border-radius: 7px;
+    box-shadow: inset 0 0 5px rgba(154, 147, 140, 0.5);
+    margin-bottom: 5px;
+    background-color: white;
+}
+textarea.short-text {
+    height: 103px;
 }
 

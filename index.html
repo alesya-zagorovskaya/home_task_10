@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
@@ -7,16 +7,26 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="form">
+    <form enctype="multipart/form-data" method="post">
         <div class="description">
             <img src="images/desc.jpg" alt="Picture">
             <p>Описание</p>
         </div>
-        <div>
-
+        <div class="block">
+            <div class="image">
+                <img src="images/bokal.jpg" alt="Здесь должна быть картинка" class="photo">
+                <label class="upload-text">
+                    <input type="file">
+                    <span>Загрузить</span>
+                </label>
+            </div>
+            <div>
+                <input type="text" placeholder="Название коктейля">
+                <input type="text" placeholder="Альтернативное название через запятую">
+                <textarea placeholder="Краткое описание" class="short-text"></textarea>
+            </div>
         </div>
-        <div class="instruction">
-        </div>
-    </div>
+        <textarea placeholder="Инструкция для приготовления" rows="7"></textarea>
+    </form>
 </body>
 </html>
